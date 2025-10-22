@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #ffffff;
+ 
+}
+
+.interface {
+    margin: 0 ;
+}
+
+/* estilo do header */
+header {
+ width: 100%;
+ background-color:#ffffff;
+ position: fixed;
+}
+
+header .interface {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-top: 5px;
+}
+
+header .menu-desktop nav ul {
+    list-style: none;   
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0;
+    }
+
+    header .menu-desktop nav ul li a {
+        color: #6d10c4;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.2s;
+    }
+    header .btncontato button {
+        width: 50px;
+        height: 30px;
+        border-radius: 2%;
+}
+
+     header .menu-desktop nav ul li a:hover {
+        transform: scale(1.05);
+     }
+
+     header .btncontato button:hover {
+       background-color:  #ffffff;
+       color:  #b568e2;
+       transition:  0.5s;
+     }
+/* estilo do mundo-site */
+section.mundo-site {
+    height: 90vh;
+    background: url(img/fundo-web2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    background-attachment: fixed;
+    }
+.mundo-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mundo-site .texto-mundo h1{
+    fonte-size: 48px;
+    font-height: 70px;
+    font-weight: 200;
+}
+
+.mundo-site .texto-mundo h1 span {
+display:block; 
+font-weight: 800; 
+}
+
+.mundo-site .texto-mundo p {
+    font-size: 20px;
+    font-weight: 300;
+    magin: 20px 0 0 0;
+
+}
+  
+.mundo-site .texto-mundo p span {
+    display: block;
+    
+    
+}
+.mundo-site .texto-mundo button {
+    width: 200px;
+    height: 40px;
+    
+}
+
+section .impacto img {
+    width: 220px;
+}
+
+section .comunidade img {
+    width: 220px;
+}
+
+section .missão img {
+    width: 220px
+}
+
+
+section .itens-container {
+  display:flex;
+  justify-content: space-between; 
+  padding: 18px;
+  flex-direction: row;
+}
+
+/*contato*/
+
+.fale {
+    display: flex;
+ justify-content: center;
+ background-color: #000;
+ color: #ffffff;
+}
+
+
+.icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    background-color: transparent;
+    cursor:  pointer;
+    transition:  0.5s;
+}
+
+.icons-contato a {
+    text-decoration:  none;
+    color: #000;
+}
+
+.icons-contato button:hover {
+    background-color: #000000
+}
+
+.icons-contato button:hover i, .icons-contato button:hover p{
+    color: #ffffff;
+}
+/*/contato*/
+
+.oceano {
+    height: 600px;
+    padding: 20px;
+    background-image: url(img/vida-marinha.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.oceano button {
+ display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 0 30px;
+    width: 30%;
+    height: 40px;
+    margin: 0 ;
+    border: 2px solid #ffffff;
+    cursor:  pointer;
+    transition:  0.5s;
+}
+
+.oceano button:hover {
+    background-color: #471e88;
+}
+
+.oceano .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.oceano h3 {
+    font-size: 3em;
+}
+
+/*estilo do cadastro*/  
+
+.contanerpai {
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    color: #57098b;
+    height: 100vh;
+    background: url(img/fundo-web2.png);
+}
+
+.contanerpai h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanerpai button {
+ margin: 0 auto 5px ;
+ border-radius: 8;
+    cursor:  pointer;
+    display: flex;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.formulario button {
+    display: flex;
+
+}
+
+/*/estilo do cadastro*/  
+
+/*texto-meio*/
+
+.conteutexto {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px; 
+    font-weight: 80; 
+    font-family: 'Impact', 'Arial Black', sans-serif;
+   background-color: #000;
+   color: #ffffff;
+
+}
+
+
+/*acao*/
+
