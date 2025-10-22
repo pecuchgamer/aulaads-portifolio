@@ -136,31 +136,8 @@ section .itens-container {
 }
 
 
-.icons-contato button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    width: 20%;
-    height: 40px;
-    margin: auto;
-    background-color: transparent;
-    cursor:  pointer;
-    transition:  0.5s;
-}
 
-.icons-contato a {
-    text-decoration:  none;
-    color: #000;
-}
 
-.icons-contato button:hover {
-    background-color: #000000
-}
-
-.icons-contato button:hover i, .icons-contato button:hover p{
-    color: #ffffff;
-}
 /*/contato*/
 
 .oceano {
