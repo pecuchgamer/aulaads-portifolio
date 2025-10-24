@@ -4,12 +4,16 @@
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
-body{
-    min-height: 100vh;
+
+body {
+    background-color: rgb(255, 255, 255);
 }
+/*header*/
+
 header {
  width: 100%;
  background-color:#ffffff;
+ 
 }
 
 header .interface {
@@ -69,28 +73,39 @@ header .menu-desktop nav ul li {
     
 }
 
-/*cadastro*/
+/*/header*/
 
-.cadastro {
+
+/*corpo login*/
+
+
+.pai {
 display: flex;
-height: 25%;
+height: 100vh;
 justify-content: center;
 align-items: center;
-color: #ffffff;
 background: linear-gradient(to right, #e273d9, #72077c);
-padding: 80px;
 }
 
-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
+h1 {
+    font-size: 24px;
 }
 
-.bntok {
-                 background: #d13eca;
+.form {
+    background: linear-gradient(to right, #e72bd8, #0e1081);
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.faca {
+   background: linear-gradient(to right, #07169e, #d45ae4);
+    height: 5px;
+    width: 210px;
+}
+
+.bntlembrar {
+             background: #d13eca;
         color: #f5f5f5;
         text-decoration: none;
         text-transform: uppercase;
@@ -98,12 +113,11 @@ input{
       transition: .4;
      border-color: transparent;
      border-radius: 8px;
-      }
+}
 
-  .bntok:hover {
-    
-        background: #eb46a6;
-    color: #eee9ec;
-  }
+.bntlembrar:hover {
+     background: #eb46a6;
+    color: #ad1372;
+    }
 
-  
+    /*/corpo login*/
