@@ -8,8 +8,7 @@
 header {
  width: 100%;
  background-color:#ffffff;
- position: fixed;
-}
+ }
 
 header .interface {
 display: flex;
@@ -66,4 +65,24 @@ header .menu-desktop nav ul li {
      background: #eb46a6;
     color: #ad1372;
     
+}
+/*rodape*/
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  background-color: #050505;
+ color: #f5f5f5;
+ padding: 40px;
+ height: 80px;
+
+}
+
+.rodapeLista {
+    list-style-type: none;
+}
+
+.rodapeLista:hover {
+    cursor: pointer;
 }

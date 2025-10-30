@@ -78,14 +78,15 @@ header .menu-desktop nav ul li {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
-    padding: 100px;
+    height: 100vh;
+    padding: 80px;
     background-image: url(img/img-cadastro-oceano.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    border-radius: 25px;
-    margin: 40px;
+    max-height: 400px;
+   
     }
     
 .div1 {
@@ -153,4 +154,23 @@ border-color:  transparent;
     cursor: pointer;
     
 }
+/*rodape*/
+
+.rodape {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
+  background-color: #050505;
+ color: #f5f5f5;
+  height: 80px;
+ }
+
+.rodapeLista {
+    list-style-type: none;
+}
+
+.rodapeLista:hover {
+    cursor: pointer;
+}
+
         

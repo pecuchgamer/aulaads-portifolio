@@ -23,7 +23,7 @@
 
             <section class="logo">
 
-                     <img class="logo" src ="img/logo.png" >
+                     <img aria-label="logo da AidVerse" class="logo" src ="img/logo.png" >
 
             </section>
             
@@ -31,9 +31,9 @@
                
                 <nav>
                     <ul>
-                        <li><a href="/"><i class="bi bi-house-fill"></i></a></li>
-                        <li><a href="Projetos.html">Projetos</a></li>
-                        <li><a href="cadastrar.html">Cadastro</a></li>
+                        <li><a aria-label="link de acesso para pagina principal" href="/"><i class="bi bi-house-fill"></i></a></li>
+                        <li><a aria-label="link de acesso para area de projetos" href="Projetos.html">Projetos</a></li>
+                        <li><a aria-label="link de acesso para se cadastrar" href="cadastrar.html">Cadastro</a></li>
                     </ul>
                 
                 </nav>
@@ -42,7 +42,7 @@
             
             <section class="btncontato">
                 <a href="cadastrar.html">
-                    <button  class="botaologin">Login</button>
+                    <button aria-label="botão de login" class="botaologin">Login</button>
                 </a>
 
             </section>
@@ -51,22 +51,36 @@
 
       <div class="pai">
 
-          <h1 class="faca">Faça o seu login ja</h1>
+          <h1 aria-label="faça seu login" class="faca">Faça o seu login ja</h1>
           <form class="form">
+   <ul>
+    <input aria-label="digite seu email"  type="email" placeholder ="email"/><i class="bi bi-envelope-at-fill"></i>
+    </ul>
+    
+    <ul>
+    <input aria-label="digite sua senha" type="password" placeholder="password" /><i class="bi bi-unlock2-fill"></i>
+    </ul>
    
-    <input type="email" placeholder="email"/>
-    <input type="password" placeholder="password" />
-    <input type="checkbox" />
+    <input aria-label="salve a senha" class="check" type="checkbox" />
     </form>
-    <p>Lembrar-me</p>
-    <button class="bntlembrar">Entrar</button>
    
+    <p aria-label="lembrar a senha" class="lembar">Lembrar-me</p>
+    <button class="bntLembrar"><a href="index.html">Entrar</a></button>
+   
+
 
       </div>
-               
+      <footer class="rodape">
+<img aria-label="logo da AidVerse" src="img/logo.png">
+<p>AidVerse</p>
 
-
-           
+<ul class="rodapeLista">
+                        
+    <li><a aria-label="link de acesso para pagina principal" href="/"><i class="bi bi-house-fill"></i></a></li>
+     <li><a aria-label="link de acesso para area de projetos" href="Projetos.html">Projetos</a></li>
+    <li><a aria-label="link de acesso para se cadastrar" href="cadastrar.html">Cadastro</a></li>
+                    </ul>
+</footer>
 
 
     

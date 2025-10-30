@@ -23,7 +23,7 @@
 
             <section class="logo">
 
-                     <img class="logo" src ="img/logo.png" >
+                     <img aria-label="logo da AidVerse" class="logo" src ="img/logo.png" >
 
             </section>
             
@@ -31,9 +31,9 @@
                
                 <nav>
                     <ul>
-                        <li><a href="/"><i class="bi bi-house-fill"></i></a></li>
-                        <li><a href="Projetos.html">Projetos</a></li>
-                        <li><a href="cadastrar.html">Cadastro</a></li>
+                         <li><a aria-label="link de acesso para pagina principal" href="/"><i class="bi bi-house-fill"></i></a></li>
+                        <li><a aria-label="link de acesso para area de projetos" href="Projetos.html">Projetos</a></li>
+                        <li><a aria-label="link de acesso para se cadastrar" href="cadastrar.html">Cadastro</a></li>
                     </ul>
                 
                 </nav>
@@ -41,8 +41,8 @@
             </section>
             
             <section class="btncontato">
-                <a href="Login.html">
-                    <button  class="botaologin">Login</button>
+                <a aria-label="link de acesso para login" href="Login.html">
+                    <button aria-label="confirmar-login"  class="botaologin">Login</button>
                 </a>
 
             </section>
@@ -51,20 +51,29 @@
         
 <div class="cadastro">
 
-    <div class="div1">Faça seu Cadastro</div>
-    <input class="div2" type="text" placeholder="name">
-    <input class="div3" type="email" placeholder="email">
-    <input class="div4" type="password" placeholder="senha">
-    <input class="div5" type="password" placeholder="confirmar-senha">
-   <button class="div6">OK</button>
+    <div aria-label="faça seu cadastro" class="div1">Faça seu Cadastro</div>
+    <input aria-label="escreva seu nome" class="div2" id="nome" type="text" placeholder="name">
+    <input aria-label="escreva seu email" class="div3" id="email" type="email" placeholder="email">
+    <input aria-label="escreva sua senha" class="div4" id="senha" type="password" placeholder="senha">
+    <input aria-label="confirme sua senha" class="div5" id="confirmar" type="password" placeholder="confirmar-senha">
+    <button aria-label="botão confirme seu cadastro" class="div6" id="bntCadastrar">OK</button>
         </div>
     
 
-       <footer>
+     <footer class="rodape">
+<img src="img/logo.png">
+<p> &copy; AidVerse ong dos voluntarios</p>
 
 
-       </footer>
+<ul class="rodapeLista">
+                         <li><a aria-label="link de acesso para pagina principal" href="/"><i class="bi bi-house-fill"></i></a></li>
+                        <li><a aria-label="link de acesso para area de projetos" href="Projetos.html">Projetos</a></li>
+                        <li><a aria-label="link de acesso para se cadastrar" href="cadastrar.html">Cadastro</a></li>
+                    </ul>
 
 
+</footer>
+
+<script src="cadastrar.js"></script>
 </body>
 </html>

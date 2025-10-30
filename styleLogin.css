@@ -78,47 +78,60 @@ header .menu-desktop nav ul li {
 
 /*corpo login*/
 
-
 .pai {
-display: flex;
-flex-direction: column;
-height: 100vh;
-justify-content: center;
-align-items: center;
-background: linear-gradient(to right, #e273d9, #72077c);
+    display: flex;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-image: url(img/img-meio-ambiente.jpg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding: 80px;
+   
 }
 
-h1 {
-    font-size: 24px;
-}
-
-.form {
-    background: linear-gradient(to right, #e72bd8, #0e1081);
-    padding: 50px;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-.faca {
-   background: linear-gradient(to right, #07169e, #d45ae4);
-    height: 5px;
-    width: 210px;
-}
-
-.bntlembrar {
-             background: #d13eca;
-        color: #f5f5f5;
+.bntLembrar {
+     background: #ce2db3;
+        color: #050505;
+        border-radius: 34px 64px ;
+        font-size: 1rem;
+        font-weight: 600;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
       transition: .4;
-     border-color: transparent;
-     border-radius: 8px;
+border-color:  transparent;
 }
 
-.bntlembrar:hover {
-     background: #eb46a6;
-    color: #ad1372;
-    }
+.bntLembrar:hover {
+background: #eb46a6;
+    color: #ffffff;
+    letter-spacing:  2px;
+    cursor: pointer;
+}
+/*rodape*/
 
-    /*/corpo login*/
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  background-color: #050505;
+ color: #f5f5f5;
+ padding: 40px;
+ height: 80px;
+
+}
+
+.rodapeLista {
+    list-style-type: none;
+}
+
+.rodapeLista:hover {
+    cursor: pointer;
+}
+
+
