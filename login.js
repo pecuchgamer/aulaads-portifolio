@@ -1,48 +1,37 @@
-window .alert("Bem Vindo")
-window .confirm("Conheça a AidVerse")
-window .prompt("escreva seu nome")
-
 const checkbox = document.getElementById('cheK');
 const body = document.body;
 
-/**
- * Alterna a classe 'dark-mode' no <body> e salva a preferência no LocalStorage.
- */
+
 function toggleDarkMode() {
     if (checkbox.checked) {
         body.classList.add('dark-mode');
-        // Salva a preferência
+        
         localStorage.setItem('theme', 'dark');
     } else {
         body.classList.remove('dark-mode');
-        // Salva a preferência
+      
         localStorage.setItem('theme', 'light');
     }
 }
 
-/**
- * Carrega a preferência de tema ao carregar a página.
- */
+
 function loadTheme() {
-    // Tenta obter o tema salvo pelo usuário
+   
     const savedTheme = localStorage.getItem('theme');
     
-    // Se não houver tema salvo, verifica a preferência do sistema
+    
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        // Aplica o Dark Mode
+     
         checkbox.checked = true; 
         body.classList.add('dark-mode');
     } else {
-        // Aplica o Light Mode
+       
         checkbox.checked = false; 
         body.classList.remove('dark-mode');
     }
 }
 
-// 1. Carrega o tema ao iniciar a página
 loadTheme();
-
-// 2. Adiciona o evento de clique (ou mudança) ao checkbox para alternar o tema
 checkbox.addEventListener('change', toggleDarkMode);

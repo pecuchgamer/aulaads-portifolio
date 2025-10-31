@@ -4,28 +4,25 @@
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
+
+
 body {
-    background-color: #ffffff;
- 
+    background-color: white; 
+    color: black;
+    transition: background-color 0.5s, color 0.5s; 
 }
 
-.interface {
-    margin: 0 ;
-}
+body.dark-mode {
+    background-color: #1a1a1a; 
+    color: #f0f0f0;
+ }
 
-/* estilo do header */
-header {
- width: 100%;
- background-color:#ffffff;
- position: fixed;
-}
 
 header .interface {
 display: flex;
 justify-content: space-around;
 align-items: center;
 }
-
 .logo {
     width: 40px;
     margin-top: 5px;
@@ -352,4 +349,70 @@ border-color:  transparent;
     cursor: pointer;
 }
 
+/*tema*/
 
+.checkBox {
+    display: none;     
+}
+
+
+.label {
+    width: 60px; 
+    height: 30px; 
+    background-color: #111; 
+    display: flex;
+    border-radius: 50px; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+
+.ball {
+    width: 25px; 
+    height: 25px;
+    background-color: white;
+    position: absolute; 
+    top: 2.5px;
+    left: 2.5px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+}
+
+
+
+
+.checkBox:checked + .label .ball {
+    transform: translateX(30px); 
+    background-color: #222;
+}
+
+.checkBox:checked + .label {
+    background-color: #999; 
+}
+
+
+.label .bi-sun {
+    color: yellow;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.label .bi-moon-fill {
+    color: white;
+    z-index: 1;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.checkBox:checked + .label .bi-sun {
+    opacity: 0;
+}
+
+.checkBox:checked + .label .bi-moon-fill {
+    opacity: 1;
+}
